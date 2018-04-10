@@ -8,6 +8,7 @@ alias tgz='tar -czvf $@'
 alias aliases='nano ~/.bash_aliases && source ~/.bash_aliases'
 
 alias pancake='ssh pancake@molotnikov.de'
+alias pan='ssh pancake@pan.molotnikov.de'
 
 alias babi='nano'
 alias naon='nano'
@@ -17,6 +18,7 @@ alias mamp='nano'
 alias nanoa='nano'
 
 alias llg='ll | grep -i $@'
+alias kk='ll;echo "please, use ll instead of kk now.."'
 alias cg='grep -i $@'
 
 alias lpad='leafpad'
@@ -123,10 +125,15 @@ alias toclip='xclip -selection clipboard'
 alias yed='cd /home/zaur/yed/yed-3.17.1/;java -jar yed.jar'
 
 alias mirrorwide='xrandr --size 1920x1080 --output eDP1 --mode 1920x1080 --pos 0x0 --output HDMI1 --mode 1920x1080 --pos 0x0'
+alias mirrorwidei='xrandr --size 1920x1080 --output eDP1 --mode 1920x1080 --pos 0x0 --output HDMI1 --mode 1920x1080i --pos 0x0'
 alias lapscreen='xrandr --size 1920x1080 --output eDP1 --mode 1920x1080 --pos 0x0 --output HDMI1 --off'
 alias mirrorsquare='xrandr --size 1024x768 --output eDP1 --mode 1024x768 --pos 0x0 --output HDMI1 --mode 1024x768 --pos 0x0'
 alias hdmibig='xrandr --size 1920x1200 --output eDP1 --off --output HDMI1 --mode 1920x1200 --scale 1x1'
+alias hdmi1280='xrandr --size 1280x1024 --output eDP1 --off --output HDMI1 --mode 1280x1024 --scale 1x1'
+alias hdmi800='xrandr --size 800x600 --output eDP1 --off --output HDMI1 --mode 800x600 --scale 1x1'
 alias hdmiwide='xrandr --size 1920x1080 --output eDP1 --off --output HDMI1 --mode 1920x1080 --scale 1x1'
+alias hdmiwidei='xrandr --size 1920x1080 --output eDP1 --off --output HDMI1 --mode 1920x1080i --scale 1x1'
+alias edp1wide='xrandr --size 1920x1080 --output eDP1 --mode 1920x1080 --scale 1x1'
 
 alias hdmibigscaled='xrandr --size 2304x1440 --output eDP1 --off --output HDMI1 --mode 1920x1200'
 
@@ -135,3 +142,20 @@ alias redmoonstop='redshift -x'
 
 alias ll='ls -alh'
 
+
+fn_exists()
+{
+    type $1 | grep -q 'shell function'
+}
+
+
+#function cd()
+#{
+#	builtin cd "$@"
+#	if [[ "$(pwd)" =~ /home/zaur/secslides* ]]; then
+#		echo "Activating hieroglyph"
+#		pushd /home/zaur/secslides &>/dev/null
+#		source activate.sh
+#		popd &> /dev/null
+#	fi
+#}

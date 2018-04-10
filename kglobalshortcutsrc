@@ -1,10 +1,43 @@
 [KDE Keyboard Layout Switcher]
+Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
+Switch keyboard layout to German=none,none,Switch keyboard layout to German
+Switch keyboard layout to Russian=none,none,Switch keyboard layout to Russian
 Switch to Next Keyboard Layout=Ctrl+Alt+K,none,Switch to Next Keyboard Layout
 _k_friendly_name=KDE Daemon
+
+[amarok]
+_k_friendly_name=amarok
+decreaseVolume=,Meta+-,Decrease Volume
+increaseVolume=Meta++,Meta++,Increase Volume
+loveTrack=,Meta+L,Last.fm: Love Current Track
+mute=Meta+M,Meta+M,Mute Volume
+next=Media Next,Media Next,Next Track
+play_pause=Media Play,Media Play,Play/Pause
+playlist_add=,Meta+A,Add Media...
+prev=Media Previous,Media Previous,Previous Track
+rate1=Meta+1,Meta+1,Rate Current Track: 1
+rate2=Meta+2,Meta+2,Rate Current Track: 2
+rate3=Meta+3,Meta+3,Rate Current Track: 3
+rate4=Meta+4,Meta+4,Rate Current Track: 4
+rate5=Meta+5,Meta+5,Rate Current Track: 5
+replay=none,none,Restart current track
+seek_backward_medium=Meta+Shift+-,Meta+Shift+-,Seek Backward by 10 seconds
+seek_forward_medium=Meta+Shift++,Meta+Shift++,Seek Forward by 10 seconds
+showNotificationPopup=Meta+O,Meta+O,Show Notification Popup
+skipTrack=,Meta+S,Last.fm: Skip Current Track
+stop=Media Stop,Media Stop,Stop
+stop_after_current=Meta+Shift+V,Meta+Shift+V,Stop after current Track
+toggleMainWindow=none,none,Toggle Main Window
 
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=kaccess
+
+[kcm_touchpad]
+Disable Touchpad=Touchpad Off,Touchpad Off,Disable Touchpad
+Enable Touchpad=Touchpad On,Touchpad On,Enable Touchpad
+Toggle Touchpad=Touchpad Toggle,Touchpad Toggle,Toggle Touchpad
+_k_friendly_name=KDE Daemon
 
 [kded5]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
@@ -21,12 +54,13 @@ display=Display,Display,Switch Display
 
 [khotkeys]
 _k_friendly_name=KDE Daemon
-{035fb2ea-43ab-4ca1-9eb0-e8e55f651055}=Meta+E,none,runner
+{035fb2ea-43ab-4ca1-9eb0-e8e55f651055}=Meta+E,none,explorer
 {453b5ac1-fa98-435b-9b70-4f4fb95178c0}=Alt+F6,none,Thunderbird
+{7af6aa22-ad6b-490c-9761-a5de042228b2}=Meta+D,none,dolphin
 {8d261bf8-2db5-42aa-9838-d902b11d73ce}=Ctrl+Alt+T,none,konsole
 {99eb9f5d-b890-49c1-a179-ce6ab089b8a4}=Print,none,Start Screenshot Tool
 {ad024351-a3fb-4a9c-ac9a-522f0e7c4f31}=Meta+Print,none,Take Active Window Screenshot
-{b1a50513-3a9e-4c40-98aa-f4c3bc2d199a}=Alt+F5,none,firefox
+{b1a50513-3a9e-4c40-98aa-f4c3bc2d199a}=none,none,firefox
 {b591b18f-c358-4a01-9ce4-b7157d5f3eba}=Shift+Print,none,Take Full Screen Screenshot
 {ce5e92ee-09c4-4ea9-9679-551a2203c0e3}=Alt+F3,none,Chrome
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
@@ -50,6 +84,11 @@ Log Out Without Confirmation=Ctrl+Alt+Shift+Del,none,Log Out Without Confirmatio
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,none,Reboot Without Confirmation
 _k_friendly_name=ksmserver
 
+[ktorrent]
+_k_friendly_name=ktorrent
+queue_suspend=Alt+Shift+P,Alt+Shift+P,Suspend Torrents
+show_kt=Alt+Shift+T,Alt+Shift+T,Show/Hide KTorrent
+
 [kwin]
 Activate Window Demanding Attention=Ctrl+Alt+A,Ctrl+Alt+A,Activate Window Demanding Attention
 Decrease Opacity=none,none,Decrease Opacity of Active Window by 5 %
@@ -61,7 +100,7 @@ Invert Screen Colors=none,none,Invert Screen Colors
 Kill Window=Ctrl+Alt+Esc,Ctrl+Alt+Esc,Kill Window
 MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Center
 MoveMouseToFocus=Meta+F5,Meta+F5,Move Mouse to Focus
-MoveZoomDown=Meta+Down,Meta+Down,Move Zoomed Area Downwards
+MoveZoomDown=,Meta+Down,Move Zoomed Area Downwards
 MoveZoomLeft=,Meta+Left,Move Zoomed Area to Left
 MoveZoomRight=,Meta+Right,Move Zoomed Area to Right
 MoveZoomUp=,Meta+Up,Move Zoomed Area Upwards
@@ -143,19 +182,19 @@ Window One Desktop Down=none,none,Window One Desktop Down
 Window One Desktop Up=none,none,Window One Desktop Up
 Window One Desktop to the Left=none,none,Window One Desktop to the Left
 Window One Desktop to the Right=none,none,Window One Desktop to the Right
-Window Operations Menu=,Alt+F3,Window Operations Menu
-Window Pack Down=none,none,Pack Window Down
-Window Pack Left=none,none,Pack Window to the Left
-Window Pack Right=none,none,Pack Window to the Right
-Window Pack Up=none,none,Pack Window Up
+Window Operations Menu=none,Alt+F3,Window Operations Menu
+Window Pack Down=Meta+Down,none,Pack Window Down
+Window Pack Left=Meta+Left,none,Pack Window to the Left
+Window Pack Right=Meta+Right,none,Pack Window to the Right
+Window Pack Up=Meta+Up,none,Pack Window Up
 Window Quick Tile Bottom=none,none,Quick Tile Window to the Bottom
-Window Quick Tile Bottom Left=none,none,Quick Tile Window to the Bottom Left
-Window Quick Tile Bottom Right=none,none,Quick Tile Window to the Bottom Right
-Window Quick Tile Left=Meta+Left,none,Quick Tile Window to the Left
-Window Quick Tile Right=Meta+Right,none,Quick Tile Window to the Right
-Window Quick Tile Top=Meta+Up,none,Quick Tile Window to the Top
-Window Quick Tile Top Left=none,none,Quick Tile Window to the Top Left
-Window Quick Tile Top Right=none,none,Quick Tile Window to the Top Right
+Window Quick Tile Bottom Left=Meta+Z,none,Quick Tile Window to the Bottom Left
+Window Quick Tile Bottom Right=Meta+X,none,Quick Tile Window to the Bottom Right
+Window Quick Tile Left=none,none,Quick Tile Window to the Left
+Window Quick Tile Right=none,none,Quick Tile Window to the Right
+Window Quick Tile Top=none,none,Quick Tile Window to the Top
+Window Quick Tile Top Left=Meta+A,none,Quick Tile Window to the Top Left
+Window Quick Tile Top Right=Meta+S,none,Quick Tile Window to the Top Right
 Window Raise=none,none,Raise Window
 Window Resize=none,none,Resize Window
 Window Shade=none,none,Shade Window
@@ -198,6 +237,13 @@ view_actual_size=Meta+0,Meta+0,Actual Size
 view_zoom_in=Meta+=,Meta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
+[mediacontrol]
+_k_friendly_name=mediacontrol
+nextmedia=,Media Next,Media playback next
+playpausemedia=,Media Play,Play/Pause media playback
+previousmedia=,Media Previous,Media playback previous
+stopmedia=,Media Stop,Stop media playback
+
 [plasmashell]
 _k_friendly_name=Plasma
 activate widget 2=Alt+F1,none,Activate Application Launcher Widget
@@ -213,4 +259,4 @@ repeat_action=Ctrl+Alt+R,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard
 show dashboard=Ctrl+F12,Ctrl+F12,Show Desktop
 show-barcode=none,none,Show Barcode...
 show-on-mouse-pos=none,none,Open Klipper at Mouse Position
-stop current activity=Meta+S,Meta+S,Stop Current Activity
+stop current activity=,Meta+S,Stop Current Activity

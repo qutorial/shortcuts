@@ -958,7 +958,7 @@ Type=GESTURE
 
 [Data_5]
 Comment=Comment
-DataCount=5
+DataCount=6
 Enabled=true
 Name=zaur
 SystemGroup=0
@@ -990,7 +990,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_1Triggers0]
-Key=Alt+F5
+Key=
 Type=SHORTCUT
 Uuid={b1a50513-3a9e-4c40-98aa-f4c3bc2d199a}
 
@@ -1075,14 +1075,14 @@ Uuid={453b5ac1-fa98-435b-9b70-4f4fb95178c0}
 [Data_5_5]
 Comment=Comment
 Enabled=true
-Name=runner
+Name=explorer
 Type=SIMPLE_ACTION_DATA
 
 [Data_5_5Actions]
 ActionsCount=1
 
 [Data_5_5Actions0]
-CommandURL=krunner
+CommandURL=dolphin
 Type=COMMAND_URL
 
 [Data_5_5Conditions]
@@ -1097,6 +1097,32 @@ TriggersCount=1
 Key=Meta+E
 Type=SHORTCUT
 Uuid={035fb2ea-43ab-4ca1-9eb0-e8e55f651055}
+
+[Data_5_6]
+Comment=Comment
+Enabled=true
+Name=dolphin
+Type=SIMPLE_ACTION_DATA
+
+[Data_5_6Actions]
+ActionsCount=1
+
+[Data_5_6Actions0]
+CommandURL=dolphin
+Type=COMMAND_URL
+
+[Data_5_6Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_5_6Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_5_6Triggers0]
+Key=Meta+D
+Type=SHORTCUT
+Uuid={7af6aa22-ad6b-490c-9761-a5de042228b2}
 
 [Gestures]
 Disabled=true
