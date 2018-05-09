@@ -8,5 +8,5 @@ curl https://raw.githubusercontent.com/qutorial/shortcuts/master/plasma-localerc
 curl https://raw.githubusercontent.com/qutorial/shortcuts/master/powermanagementprofilesrc > ~/.config/powermanagementprofilesrc
 curl https://raw.githubusercontent.com/qutorial/shortcuts/master/plasma-org.kde.plasma.desktop-appletsrc > ~/.config/plasma-org.kde.plasma.desktop-appletsrc
 echo "source ~/.bash_aliases" >> ~/.bashrc
-souce ~/.bashrc
+source ~/.bashrc
 
