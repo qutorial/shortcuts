@@ -88,7 +88,7 @@ alias backup_ocsp='rsync -av ~/ownCloud/OCSP/encfs ~/hdd/home/zaur/ownCloud/OCSP
 #alias backup_ocsp_cloud='rsync -av /home/zaur/OCSP /home/zaur/HomeBackup/private/ && rsync -av /home/zaur/ownCloud/Security/CERTS/OCSP/share /home/zaur/HomeBackup/private/OCSP_share'
 alias mount_ocsp='encfs ~/ownCloud/OCSP/encfs ~/OCSP && backup_ocsp'
 alias umount_ocsp='fusermount -u ~/OCSP && backup_ocsp'
-alias mount_website='sshfs -o idmap=user -o uid=$UID -o gid=$GROUPS pancake@molotnikov.de:/var/www /home/zaur/website/'
+alias mount_website='sshfs -o idmap=user -o uid=$UID -o gid=$GROUPS pancake@molotnikov.de:/var/www /home/zaur/website/ && cd /home/zaur/website'
 
 alias editaliases='nano ~/.bash_aliases && source ~/.bash_aliases'
 
@@ -124,18 +124,21 @@ alias toclip='xclip -selection clipboard'
 
 alias yed='cd /home/zaur/yed/yed-3.17.1/;java -jar yed.jar'
 
-alias mirrorwide='xrandr --size 1920x1080 --output eDP1 --mode 1920x1080 --pos 0x0 --output HDMI1 --mode 1920x1080 --pos 0x0'
-alias mirrorwidei='xrandr --size 1920x1080 --output eDP1 --mode 1920x1080 --pos 0x0 --output HDMI1 --mode 1920x1080i --pos 0x0'
-alias lapscreen='xrandr --size 1920x1080 --output eDP1 --mode 1920x1080 --pos 0x0 --output HDMI1 --off'
-alias mirrorsquare='xrandr --size 1024x768 --output eDP1 --mode 1024x768 --pos 0x0 --output HDMI1 --mode 1024x768 --pos 0x0'
-alias hdmibig='xrandr --size 1920x1200 --output eDP1 --off --output HDMI1 --mode 1920x1200 --scale 1x1'
-alias hdmi1280='xrandr --size 1280x1024 --output eDP1 --off --output HDMI1 --mode 1280x1024 --scale 1x1'
-alias hdmi800='xrandr --size 800x600 --output eDP1 --off --output HDMI1 --mode 800x600 --scale 1x1'
-alias hdmiwide='xrandr --size 1920x1080 --output eDP1 --off --output HDMI1 --mode 1920x1080 --scale 1x1'
-alias hdmiwidei='xrandr --size 1920x1080 --output eDP1 --off --output HDMI1 --mode 1920x1080i --scale 1x1'
+alias mirrorwide1='xrandr --size 1920x1080 --output eDP-1 --mode 1920x1080 --pos 0x0 --output HDMI-1 --mode 1920x1080 --pos 0x0'
+alias mirrorwide2='xrandr --size 1920x1080 --output eDP-1 --mode 1920x1080 --pos 0x0 --output HDMI-2 --mode 1920x1080 --pos 0x0'
+alias mirrorwidei='xrandr --size 1920x1080 --output eDP-1 --mode 1920x1080 --pos 0x0 --output HDMI-1 --mode 1920x1080i --pos 0x0'
+alias lapscreen='xrandr --size 1920x1080 --output eDP-1 --mode 1920x1080 --pos 0x0 --output DP-1-1 --off --output DP-2-1 --off --output HDMI-1 --off --output HDMI-2 --off --output DP-1 --off --output DP-2 --off'
+alias mirrorsquare='xrandr --size 1024x768 --output eDP1 --mode 1024x768 --pos 0x0 --output HDMI-2 --mode 1024x768 --pos 0x0'
+alias hdmibig='xrandr --size 1920x1200 --output eDP-1 --off --output HDMI-1 --mode 1920x1200 --scale 1x1'
+alias mozaiq='xrandr --output DP-2-1 --scale 1.2x1.1 --primary  --panning 3072x1584 --output eDP-1 --off'
+alias traveldockbig='xrandr --size 1920x1200 --output eDP-1 --off --output DP-1 --mode 1920x1200 --scale 1x1'
+alias hdmi1280='xrandr --size 1280x1024 --output eDP1 --off --output HDMI-2 --mode 1280x1024 --scale 1x1'
+alias hdmi800='xrandr --size 800x600 --output eDP1 --off --output HDMI-2 --mode 800x600 --scale 1x1'
+alias hdmiwide='xrandr --size 1920x1080 --output eDP1 --off --output HDMI-2 --mode 1920x1080 --scale 1x1'
+alias hdmiwidei='xrandr --size 1920x1080 --output eDP1 --off --output HDMI-2 --mode 1920x1080i --scale 1x1'
 alias edp1wide='xrandr --size 1920x1080 --output eDP1 --mode 1920x1080 --scale 1x1'
 
-alias hdmibigscaled='xrandr --size 2304x1440 --output eDP1 --off --output HDMI1 --mode 1920x1200'
+alias hdmibigscaled='xrandr --size 2304x1440 --output eDP1 --off --output HDMI-2 --mode 1920x1200'
 
 alias redmoon='redshift -O 3000 -b 0.6:0.6'
 alias redmoonstop='redshift -x'
@@ -149,13 +152,13 @@ fn_exists()
 }
 
 
-#function cd()
-#{
-#	builtin cd "$@"
-#	if [[ "$(pwd)" =~ /home/zaur/secslides* ]]; then
-#		echo "Activating hieroglyph"
-#		pushd /home/zaur/secslides &>/dev/null
-#		source activate.sh
-#		popd &> /dev/null
-#	fi
-#}
+export LAPTOPLANNIC=enp0s31f6
+export ETHERNIC=$LANNIC
+export TRAVELDOCNIC=enx3c18a0b13386
+export WLANNIC=wlp4s0
+export WIFINIC=$WLANNIC
+
+alias ro='route -nv'
+alias ic='ifconfig'
+alias ff='firefox'
+
