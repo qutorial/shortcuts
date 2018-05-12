@@ -8,3 +8,4 @@ cp ~/.config/powermanagementprofilesrc ./
 cp ~/.config/plasma-org.kde.plasma.desktop-appletsrc ./
 cp ~/networking.sh ./
 
+cp /home/zaur/.config/kwinrc ./
