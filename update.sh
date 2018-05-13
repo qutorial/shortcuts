@@ -11,3 +11,6 @@ cp ~/networking.sh ./
 cp ~/.config/dolphinrc ./
 cp ~/.config/kwinrc ./
 cp ~/.config/dolphinrc ./
+cp ~/.config/kwinrc ./
+cp ~/.config/kwinrc ./
+cp ~/.config/dolphinrc ./
