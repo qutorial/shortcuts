@@ -9,4 +9,4 @@ curl https://raw.githubusercontent.com/qutorial/shortcuts/master/powermanagement
 curl https://raw.githubusercontent.com/qutorial/shortcuts/master/plasma-org.kde.plasma.desktop-appletsrc > ~/.config/plasma-org.kde.plasma.desktop-appletsrc
 echo "source ~/.bash_aliases" >> ~/.bashrc
 source ~/.bashrc
-curl https://raw.https://raw.githubusercontent.com/qutorial/shortcuts/master/kwinrc > ~/.config/kwinrccurl https://raw.https://raw.githubusercontent.com/qutorial/shortcuts/master/kwinrc > ~/shortcuts/kwinrccurl https://raw.https://raw.githubusercontent.com/qutorial/shortcuts/master/kwinrc > ~/shortcuts/kwinrc
+curl https://raw.https://raw.githubusercontent.com/qutorial/shortcuts/master/kwinrc > ~/.config/kwinrccurl https://raw.https://raw.githubusercontent.com/qutorial/shortcuts/master/kwinrc > ~/shortcuts/kwinrccurl https://raw.https://raw.githubusercontent.com/qutorial/shortcuts/master/kwinrc > ~/shortcuts/kwinrccurl https://raw.https://raw.githubusercontent.com/qutorial/shortcuts/master/dolphinrc > ~/.config/dolphinrc
