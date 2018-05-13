@@ -11,3 +11,4 @@ echo "source ~/.bash_aliases" >> ~/.bashrc
 source ~/.bashrc
 
 curl https://raw.https://raw.githubusercontent.com/qutorial/shortcuts/master/dolphinrc > ~/.config/dolphinrc
+curl https://raw.https://raw.githubusercontent.com/qutorial/shortcuts/master/kwinrc > ~/.config/kwinrc

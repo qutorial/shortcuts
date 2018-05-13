@@ -9,3 +9,4 @@ cp ~/.config/plasma-org.kde.plasma.desktop-appletsrc ./
 cp ~/networking.sh ./
 
 cp ~/.config/dolphinrc ./
+cp ~/.config/kwinrc ./
