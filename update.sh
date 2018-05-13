@@ -7,4 +7,5 @@ cp ~/.config/plasma-localerc ./
 cp ~/.config/powermanagementprofilesrc ./
 cp ~/.config/plasma-org.kde.plasma.desktop-appletsrc ./
 cp ~/networking.sh ./
-cp ~/.config/kwinrc ./cp ~/shortcuts/kwinrc ./cp ~/shortcuts/kwinrc ./cp ~/.config/dolphinrc ./
+
+cp ~/shortcuts/kwinrc ./
