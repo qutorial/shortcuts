@@ -22,7 +22,7 @@ for arg in sys.argv[1:]:
   call(["git", "add", name])
 
   with open("install.sh", "a") as install:
-    install.write("\ncurl https://raw.https://raw.githubusercontent.com/qutorial/shortcuts/master/%s > %s" % (name, local))
+    install.write("\ncurl https://raw.githubusercontent.com/qutorial/shortcuts/master/%s > %s" % (name, local))
   call(["git", "add", "install.sh"])
 
   with open("update.sh", "a") as update:
