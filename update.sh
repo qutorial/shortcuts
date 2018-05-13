@@ -8,5 +8,4 @@ cp ~/.config/powermanagementprofilesrc ./
 cp ~/.config/plasma-org.kde.plasma.desktop-appletsrc ./
 cp ~/networking.sh ./
 
-cp ~/shortcuts/kwinrc ./
 cp ~/.config/dolphinrc ./
