@@ -7,5 +7,4 @@ cp ~/.config/plasma-localerc ./
 cp ~/.config/powermanagementprofilesrc ./
 cp ~/.config/plasma-org.kde.plasma.desktop-appletsrc ./
 cp ~/networking.sh ./
-
-cp /home/zaur/.config/kwinrc ./
+cp {local} ./
