@@ -63,45 +63,45 @@ plugin=org.kde.plasma.systemtray
 formfactor=2
 location=4
 
-[Containments][1][Applets][5][Configuration][Containments][15][Applets][17]
+[Containments][1][Applets][5][Configuration][Containments][15][Applets][40]
 immutability=1
 plugin=org.kde.plasma.volume
 
-[Containments][1][Applets][5][Configuration][Containments][15][Applets][18]
+[Containments][1][Applets][5][Configuration][Containments][15][Applets][41]
 immutability=1
 plugin=org.kde.plasma.clipboard
 
-[Containments][1][Applets][5][Configuration][Containments][15][Applets][19]
+[Containments][1][Applets][5][Configuration][Containments][15][Applets][42]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
-[Containments][1][Applets][5][Configuration][Containments][15][Applets][20]
+[Containments][1][Applets][5][Configuration][Containments][15][Applets][43]
 immutability=1
 plugin=org.kde.kdeconnect
 
-[Containments][1][Applets][5][Configuration][Containments][15][Applets][21]
+[Containments][1][Applets][5][Configuration][Containments][15][Applets][44]
 immutability=1
 plugin=org.kde.plasma.notifications
 
-[Containments][1][Applets][5][Configuration][Containments][15][Applets][22]
+[Containments][1][Applets][5][Configuration][Containments][15][Applets][45]
 immutability=1
 plugin=org.kde.plasma.printmanager
 
-[Containments][1][Applets][5][Configuration][Containments][15][Applets][23]
+[Containments][1][Applets][5][Configuration][Containments][15][Applets][46]
 immutability=1
 plugin=org.kde.discovernotifier
 
-[Containments][1][Applets][5][Configuration][Containments][15][Applets][24]
+[Containments][1][Applets][5][Configuration][Containments][15][Applets][47]
 immutability=1
 plugin=org.kde.plasma.battery
 
-[Containments][1][Applets][5][Configuration][Containments][15][Applets][26]
-immutability=1
-plugin=org.kde.plasma.bluetooth
-
-[Containments][1][Applets][5][Configuration][Containments][15][Applets][29]
+[Containments][1][Applets][5][Configuration][Containments][15][Applets][48]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
+
+[Containments][1][Applets][5][Configuration][Containments][15][Applets][49]
+immutability=1
+plugin=org.kde.plasma.bluetooth
 
 [Containments][1][Applets][5][Configuration][General]
 extraItems=org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.printmanager,org.kde.discovernotifier,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.kdeconnect
@@ -144,9 +144,15 @@ location=0
 plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
 
+[Containments][16][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][16][Wallpaper][org.kde.image][General]
-height=1440
-width=2560
+FillMode=1
+Image=file:///usr/share/wallpapers/Horos/contents/images/1920x1200.png
+height=1584
+width=3072
 
 [Containments][27]
 activityId=cc499f71-4912-4248-8a48-37ca56b8a828
@@ -158,8 +164,8 @@ plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
 
 [Containments][27][Wallpaper][org.kde.image][General]
-height=1080
-width=1920
+height=1584
+width=3072
 
 [Containments][28]
 activityId=cc499f71-4912-4248-8a48-37ca56b8a828
@@ -171,6 +177,19 @@ plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
 
 [Containments][28][Wallpaper][org.kde.image][General]
+height=1080
+width=1920
+
+[Containments][39]
+activityId=cc499f71-4912-4248-8a48-37ca56b8a828
+formfactor=0
+immutability=1
+lastScreen=4
+location=0
+plugin=org.kde.desktopcontainment
+wallpaperplugin=org.kde.image
+
+[Containments][39][Wallpaper][org.kde.image][General]
 height=1080
 width=1920
 

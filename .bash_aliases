@@ -137,7 +137,7 @@ alias hdmi800='xrandr --size 800x600 --output eDP1 --off --output HDMI-2 --mode 
 alias hdmiwide='xrandr --size 1920x1080 --output eDP1 --off --output HDMI-2 --mode 1920x1080 --scale 1x1'
 alias hdmiwidei='xrandr --size 1920x1080 --output eDP1 --off --output HDMI-2 --mode 1920x1080i --scale 1x1'
 alias edp1wide='xrandr --size 1920x1080 --output eDP1 --mode 1920x1080 --scale 1x1'
-
+alias asuslone='xrandr --output DP-1 --auto --scale 1.2x1.2 --primary --panning 2304x1440'
 alias hdmibigscaled='xrandr --size 2304x1440 --output eDP1 --off --output HDMI-2 --mode 1920x1200'
 
 alias redmoon='redshift -O 3000 -b 0.6:0.6'

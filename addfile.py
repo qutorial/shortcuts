@@ -9,26 +9,25 @@ def e(s, code):
   print(s, file = sys.stderr)
   sys.exit(code)
 
-if len(sys.argv) !=  2:
-  e("Usage: addfile.py ~/.config/somefile", 1)
+if len(sys.argv) <  2:
+  e("Usage: addfile.py ~/.config/somefiles", 1)
 
+for arg in sys.argv[1:]:
+  f=os.path.abspath(arg)
+  name=os.path.basename(f)
+  home = str(Path.home())
+  local=f.replace(home, '~')
 
+  call(["cp", "-v", f, "./"])
+  call(["git", "add", name])
 
-f=os.path.abspath(sys.argv[1])
-name=os.path.basename(f)
-home = str(Path.home())
-local=f.replace(home, '~')
+  with open("install.sh", "a") as install:
+    install.write("\ncurl https://raw.https://raw.githubusercontent.com/qutorial/shortcuts/master/%s > %s" % (name, local))
+  call(["git", "add", "install.sh"])
 
-call(["cp", "-v", f, "./"])
-call(["git", "add", name])
+  with open("update.sh", "a") as update:
+    update.write("\ncp %s ./" % local)
+  call(["git", "add", "update.sh"])
 
-with open("install.sh", "a") as install:
-  install.write("curl https://raw.https://raw.githubusercontent.com/qutorial/shortcuts/master/%s > %s" % (name, local))
-call(["git", "add", "install.sh"])
-
-with open("update.sh", "a") as update:
-  update.write("cp %s ./" % local)
-call(["git", "add", "update.sh"])
-
-call(["git", "commit", "-m", "\"Added %s\"" % name])
-cal(["git", "push"])
+call(["git", "commit", "-m", "\"Added %s\"" % " and ".join(sys.argv[1:])])
+call(["git", "push"])

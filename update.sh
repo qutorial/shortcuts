@@ -7,10 +7,5 @@ cp ~/.config/plasma-localerc ./
 cp ~/.config/powermanagementprofilesrc ./
 cp ~/.config/plasma-org.kde.plasma.desktop-appletsrc ./
 cp ~/networking.sh ./
-
 cp ~/.config/dolphinrc ./
 cp ~/.config/kwinrc ./
-cp ~/.config/dolphinrc ./
-cp ~/.config/kwinrc ./
-cp ~/.config/kwinrc ./
-cp ~/.config/dolphinrc ./

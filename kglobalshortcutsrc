@@ -59,8 +59,9 @@ _k_friendly_name=KDE Daemon
 {035fb2ea-43ab-4ca1-9eb0-e8e55f651055}=Meta+E,none,explorer
 {453b5ac1-fa98-435b-9b70-4f4fb95178c0}=Alt+F6,none,Thunderbird
 {7af6aa22-ad6b-490c-9761-a5de042228b2}=Meta+D,none,dolphin
-{7f5f8288-bd87-4160-a507-761983dfa380}=Ctrl+Alt+M,none,New Action
+{7f5f8288-bd87-4160-a507-761983dfa380}=Ctrl+Alt+M,none,virt-manager-ctrl-alt-m
 {8d261bf8-2db5-42aa-9838-d902b11d73ce}=Ctrl+Alt+T,none,konsole
+{9813d4c2-4afe-4c0d-84a1-ceac60c47c51}=Alt+F9,none,virtmanager-alt-F9
 {99eb9f5d-b890-49c1-a179-ce6ab089b8a4}=Print,none,Start Screenshot Tool
 {ad024351-a3fb-4a9c-ac9a-522f0e7c4f31}=none,none,Take Active Window Screenshot
 {b1a50513-3a9e-4c40-98aa-f4c3bc2d199a}=Alt+F5,none,firefox
@@ -85,7 +86,7 @@ Lock Session=Meta+L\tScreensaver,Ctrl+Alt+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,none,Log Out
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del,none,Log Out Without Confirmation
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,none,Reboot Without Confirmation
-_k_friendly_name=System Settings
+_k_friendly_name=ksmserver
 
 [ktorrent]
 _k_friendly_name=ktorrent
