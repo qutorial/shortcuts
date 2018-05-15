@@ -130,7 +130,7 @@ alias mirrorwidei='xrandr --size 1920x1080 --output eDP-1 --mode 1920x1080 --pos
 alias lapscreen='xrandr --size 1920x1080 --output eDP-1 --mode 1920x1080 --pos 0x0 --output DP-1-1 --off --output DP-2-1 --off --output HDMI-1 --off --output HDMI-2 --off --output DP-1 --off --output DP-2 --off'
 alias mirrorsquare='xrandr --size 1024x768 --output eDP1 --mode 1024x768 --pos 0x0 --output HDMI-2 --mode 1024x768 --pos 0x0'
 alias hdmibig='xrandr --size 1920x1200 --output eDP-1 --off --output HDMI-1 --mode 1920x1200 --scale 1x1'
-alias mozaiq='xrandr --output DP-2-1 --scale 1.2x1.1 --primary  --panning 3072x1584 --output eDP-1 --off'
+alias mozaiq='echo "Starting iiyama..."; killall plasmashell; xrandr --output DP-2-1 --auto; sleep 4; xrandr --output DP-2-1 --scale 1.2x1.1 --primary  --panning 3072x1584 --output eDP-1 --off; kstart plasmashell 2>&1 1>/dev/null & disown;'
 alias traveldockbig='xrandr --size 1920x1200 --output eDP-1 --off --output DP-1 --mode 1920x1200 --scale 1x1'
 alias hdmi1280='xrandr --size 1280x1024 --output eDP1 --off --output HDMI-2 --mode 1280x1024 --scale 1x1'
 alias hdmi800='xrandr --size 800x600 --output eDP1 --off --output HDMI-2 --mode 800x600 --scale 1x1'
@@ -162,3 +162,6 @@ alias ro='route -nv'
 alias ic='ifconfig'
 alias ff='firefox'
 
+alias youtubedl='youtube-dl -f bestvideo '
+
+alias capturescreen='recordmydesktop --fps=25 --workdir=./ --on-the-fly-encoding -o screencap.`date +%d.%m.%y_%H:%M_%s`.ogv'

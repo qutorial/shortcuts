@@ -9,7 +9,7 @@
 #sudo ifconfig docker0 down
 #sudo ifconfig wlp3s0 down
 
-dev=enp0s31f6
+export dev=enp0s31f6
 selfaddr=192.168.1.2
 selfnm=24
 selffulladdr="$selfaddr/$selfnm"
